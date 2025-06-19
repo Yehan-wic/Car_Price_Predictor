@@ -1,8 +1,0 @@
-[project]
-name = "Car Price Predictor"
-version = "0.1.0"
-description = "Predict used car prices using ML"
-authors = [
-    {name = "Sandali Shela", email = "sandali.shela@gmail.com"}
-]
-requires-python = ">=3.9"
