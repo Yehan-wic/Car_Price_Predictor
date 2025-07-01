@@ -13,6 +13,6 @@
       ]
     }
   },
-  "postCreateCommand": "/workspace/Miniforge3-Linux-x86_64.sh -b -p /opt/miniforge && export PATH=/opt/miniforge/bin:$PATH && /opt/miniforge/bin/conda init bash && echo 'export PATH=/opt/miniforge/bin:$PATH' >> ~/.bashrc && /opt/miniforge/bin/conda config --set auto_activate_base false && /opt/miniforge/bin/mamba install -n base mamba -c conda-forge -y && /opt/miniforge/bin/mamba env create -f /workspaces/Car_Price_Predictor/environment.yml && echo 'conda activate car_price_env' >> ~/.bashrc",
+ "postCreateCommand": "/workspace/Miniforge3-Linux-x86_64.sh -b -p /opt/miniforge && export PATH=/opt/miniforge/bin:$PATH && /opt/miniforge/bin/conda init bash && echo 'export PATH=/opt/miniforge/bin:$PATH' >> ~/.bashrc && /opt/miniforge/bin/conda config --set auto_activate_base false && /opt/miniforge/bin/mamba install -n base mamba -c conda-forge -y && /opt/miniforge/bin/mamba env update -n car_price_env -f /workspaces/Car_Price_Predictor/environment.yml --prune && echo 'conda activate car_price_env' >> ~/.bashrc"
 
 }
