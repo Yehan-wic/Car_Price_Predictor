@@ -13,5 +13,7 @@
       ]
     }
   },
-  "postCreateCommand": "/workspace/Miniforge3-Linux-x86_64.sh -b -p /opt/miniforge && echo 'export PATH=/opt/miniforge/bin:$PATH' >> ~/.bashrc && source ~/.bashrc && conda init bash && conda config --set auto_activate_base false"
+
+  "postCreateCommand": "if [ ! -d /opt/miniforge ]; then /workspace/Miniforge3-Linux-x86_64.sh -b -p /opt/miniforge; fi && export PATH=/opt/miniforge/bin:$PATH && /opt/miniforge/bin/conda init bash && echo 'export PATH=/opt/miniforge/bin:$PATH' >> ~/.bashrc && /opt/miniforge/bin/conda config --set auto_activate_base false && /opt/miniforge/bin/mamba install -n base mamba -c conda-forge -y && if ! /opt/miniforge/bin/conda info --envs | grep -q car_price_env; then /opt/miniforge/bin/mamba env create -f /workspaces/Car_Price_Predictor/environment.yml; fi && echo 'conda activate car_price_env' >> ~/.bashrc"
+
 }
