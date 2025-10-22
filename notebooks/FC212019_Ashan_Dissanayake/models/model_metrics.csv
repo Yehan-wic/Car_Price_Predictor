@@ -1,0 +1,2 @@
+MAE,RMSE,R2,n_estimators,max_depth,learning_rate,subsample,colsample_bytree
+72298.17842865929,101940.54147515509,0.9051965333603113,200,5,0.1,0.8,0.8
