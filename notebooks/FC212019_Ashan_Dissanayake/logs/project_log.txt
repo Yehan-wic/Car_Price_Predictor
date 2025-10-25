@@ -1,0 +1,16 @@
+2025-10-18 22:15:53,398:INFO:Project setup complete.
+2025-10-18 22:15:53,539:INFO:Dataset loaded with shape: (8128, 13)
+2025-10-18 22:15:57,953:INFO:EDA complete.
+2025-10-18 22:16:00,344:INFO:Feature engineering complete.
+2025-10-18 22:16:00,983:INFO:Data split complete.
+2025-10-18 22:16:36,451:INFO:Trained and saved new XGBoost model.
+2025-10-18 22:16:39,033:INFO:Model Evaluation Metrics: MAE=72298.18, RMSE=101940.54, R2=0.9052
+2025-10-18 22:16:39,087:INFO:Model saved successfully with metrics.
+2025-10-22 09:31:16,681:INFO:Project setup complete.
+2025-10-22 09:31:16,797:INFO:Dataset loaded with shape: (8128, 13)
+2025-10-22 09:31:19,963:INFO:EDA complete.
+2025-10-22 09:31:21,468:INFO:Feature engineering complete.
+2025-10-22 09:31:21,816:INFO:Data split complete.
+2025-10-22 09:31:42,818:INFO:Loaded XGBoost model from disk.
+2025-10-22 09:31:44,854:INFO:Model Evaluation Metrics: MAE=72298.18, RMSE=101940.54, R2=0.9052
+2025-10-22 09:31:44,896:INFO:Model saved successfully with metrics.
