@@ -7,8 +7,8 @@ import base64
 # -------------------------
 # Load Model and Dataset
 # -------------------------
-model = pk.load(open("c:/Users/user/OneDrive - sci.sjp.ac.lk/Desktop/ml new/Car_Price_Predictor/notebooks/FC212035_Shenal/model.pkl", "rb"))
-cars_data = pd.read_csv("c:/Users/user/OneDrive - sci.sjp.ac.lk/Desktop/ml new/Car_Price_Predictor/data/raw/car_data.csv")
+model = pk.load(open("C:/Users/user/Desktop/ML1/Car_Price_Predictor/notebooks/FC212035_Shenal/model.pkl", "rb"))
+cars_data = pd.read_csv("C:/Users/user/Desktop/ML1/Car_Price_Predictor/data/raw/car_data.csv")
 
 # Extract brand name
 def get_brand_name(car_name):
@@ -80,7 +80,7 @@ def add_bg_from_local(image_path):
     )
 
 # ✅ Add your image path here
-add_bg_from_local("c:/Users/user/OneDrive - sci.sjp.ac.lk/Desktop/ml new/1.jpg")
+add_bg_from_local("C:/Users/user/Desktop/ML1/2.png")
 
 # -------------------------
 # Streamlit Page Config
@@ -95,7 +95,7 @@ st.markdown(
     <div style="background-color:rgba(43,45,66,0.85);padding:20px;border-radius:12px;">
         <h1 style="color:white;text-align:center;">🚘 Car Price Prediction</h1>
         <p style="color:#edf2f4;text-align:center;font-size:18px;">
-        Estimate your car's resale value in seconds. Just provide a few details below 👇
+        Estimate your car's value in seconds. Just provide a few details below 👇
         </p>
     </div>
     """,
@@ -105,11 +105,11 @@ st.markdown(
 # -------------------------
 # Sidebar
 # -------------------------
-st.sidebar.header("📊 Dataset Insights")
-st.sidebar.write("Cars in Dataset:", cars_data.shape[0])
-st.sidebar.write("Unique Brands:", cars_data['name'].nunique())
-st.sidebar.write("Fuel Types:", ", ".join(cars_data['fuel'].unique()))
-st.sidebar.info("💡 Tip: More recent models with low mileage usually get higher prices.")
+# st.sidebar.header("📊 Dataset Insights")
+# st.sidebar.write("Cars in Dataset:", cars_data.shape[0])
+# st.sidebar.write("Unique Brands:", cars_data['name'].nunique())
+# st.sidebar.write("Fuel Types:", ", ".join(cars_data['fuel'].unique()))
+# st.sidebar.info("💡 Tip: More recent models with low mileage usually get higher prices.")
 
 # -------------------------
 # Tabs Layout
@@ -185,4 +185,4 @@ with tab3:
             """,
             unsafe_allow_html=True
         )
-        st.balloons()
+        # st.balloons()
