@@ -80,7 +80,7 @@ def add_bg_from_local(image_path):
     )
 
 # ✅ Add your image path here
-add_bg_from_local("C:/Users/user/Desktop/ML1/2.png")
+add_bg_from_local("C:/Users/user/Desktop/ML1/Car_Price_Predictor/2.png")
 
 # -------------------------
 # Streamlit Page Config
