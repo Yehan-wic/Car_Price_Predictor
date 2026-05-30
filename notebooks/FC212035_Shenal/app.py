@@ -135,22 +135,10 @@ with tab3:
         st.session_state.predicted_price = None
 
     # Predict
-    if predict_btn:
-        input_data = pd.DataFrame(
-            [[name, year, km_driven, fuel, "Individual", transmission, owner, mileage, engine, max_power, seats]],
-            columns=["name","year","km_driven","fuel","seller_type","transmission","owner","mileage","engine","max_power","seats"]
-        )
+    
+     
 
-        input_data["owner"].replace(
-            ["First Owner","Second Owner","Third Owner","Fourth & Above Owner","Test Drive Car"],
-            [1,2,3,4,5], inplace=True
-        )
-        input_data["fuel"].replace(["Diesel","Petrol","LPG","CNG"], [1,2,3,4], inplace=True)
-        input_data["seller_type"].replace(["Individual","Dealer","Trustmark Dealer"], [1,2,3], inplace=True)
-        input_data["transmission"].replace(["Manual","Automatic"], [1,2], inplace=True)
-        input_data["name"] = input_data["name"].map(brand_labels)
-
-        st.session_state.predicted_price = model.predict(input_data)[0]
+    
 
     # Reset only price
     if reset_btn:
